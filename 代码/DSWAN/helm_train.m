@@ -1,4 +1,4 @@
-function [TrainingAccuracy,TestingAccuracy,Training_time,Testing_time] = helm_train(train_x,train_y,test_x,test_y,b1,b2,b3,s,C,lam,n1)
+function [TrainingAccuracy,TestingAccuracy,Training_time,Testing_time] = DSWAN(train_x,train_y,test_x,test_y,b1,b2,b3,s,C,lam,n1)
 tic
 train_x = zscore(train_x')';
 H1 = [train_x .1 * ones(size(train_x,1),1)];
