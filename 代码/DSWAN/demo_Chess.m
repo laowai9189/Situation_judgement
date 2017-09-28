@@ -22,4 +22,4 @@ b1=2*rand(size(train_tezheng,2)+1,N1)-1;
 b2=2*rand(N1+1,N2)-1;
 b3=orth(2*rand(N2+1,N3)'-1)';
 C = 2^-30 ; s = 0.6;
-[TrainingAccuracy,TestingAccuracy,Training_time,Testing_time] = helm_train(train_tezheng,train_leibiao,test_tezheng,test_leibiao,b1,b2,b3,s,C);
+[TrainingAccuracy,TestingAccuracy,Training_time,Testing_time] = DSWAN(train_tezheng,train_leibiao,test_tezheng,test_leibiao,b1,b2,b3,s,C);
